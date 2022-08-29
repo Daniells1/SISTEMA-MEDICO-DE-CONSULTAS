@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&family=Raleway:wght@500;700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body ,html{
+    margin:0;
+    width: 100%;
+    height:100vh;
+    font-family: 'Raleway', sans-serif;
+}
+#container{
+    display: grid;
+    grid-template: "topo" 100px
+                   "conteudo" 
+                   "rodape" 100px / 1fr;
+     min-height: 100%;               
+
+}
+#topo{
+    grid-area: topo;
+    display:flex ;
+    align-items: flex-end; 
+    
+}
+#topo #logo{
+    height: 100%;
+}
+
+#logo img{
+    height: 100%;
+}
+
+#conteudo
+{
+    grid-area: conteudo;
+    padding: 2rem;
+}
+#conteudo h1{
+    margin: 0;
+    background-color: #9b59b6;
+    color:#FFF;
+    padding: 1rem;
+}
+#rodape{
+   grid-area: rodape;
+   background-color: #000;
+   color:#FFF
+}
+#rodape p{
+    text-align: center;
+    padding-top: 0.8rem;
+    font-size: 1.5rem;
+}
+
+#topo #menu{
+    margin-left: 1rem;
+    padding: 1rem 0;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+}
+#menu a{
+    padding: 1rem;
+    text-decoration: none;
+    color: #9b59b6;
+    position: relative;
+}
+#menu a:hover{
+    
+    background-color: #cfa4e0;
+    color: #271a2c;
+}
+#menu a:before, #menu a:after{
+     height: 3px;
+     position: absolute;
+     content: '';
+     background-color: #9b59b6;
+     width: 0;
+     transition: all 0.5s ease;
+     -webkit-transition: all 0.5s ease;
+
+}
+#menu a::before{
+    top: 0;
+    left: 0;
+
+}
+#menu a::after{
+    bottom: 0;
+    right: 0;
+
+}
+#menu a:hover:before, #menu a:hover:after{
+    width: 100%;
+
+}
+/* especialidade */
+
+
+form{
+    margin: 1rem 0;
+
+}
+form  div{
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+
+form  div > label.from-label{
+    display: block;
+    width: 100%;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+form  .form-control{
+    width: 100%;
+    border:1px solid #cfa4e0;
+    border-radius: 5px;
+    padding: 10px;
+    outline: none;
+}
+.btn{
+    padding: 0.6rem;
+    border: none;
+    cursor: pointer;
+}
+.btn-save{
+    background-color: #600086;
+    color: #FFF;
+}
+.my-table{
+    width: 100%;
+    border: 1px solid #444;
+    border-collapse: collapse ;
+    margin-top: 0.5rem;
+}
+.my-table, .my-table th, .my-table td{
+    border: 1px solid #444;
+    padding: 0.7rem;
+}
+
+.my-table thead tr:first-child{
+    background-color: #cfa4e0;
+}
+#message{
+    padding: 1rem;
+    border: 1px solid #00a6d8;
+    background-color: #007ca1;
+    border-radius:5px ;
+    color:#FFF;
+    margin: 0.5rem 0;
+}
+@keyframes fadeOut{
+    0%{opacity: 1;}
+    99%{opacity: 0.1;}
+    100%{opacity: 0; height: 0; padding: 0; margin: 0;}
+}
+/* especialidade */
+.elem-hidden{
+    animation: fadeOut 2s;
+    animation-fill-mode: forwards;
+}
+.w-33{
+    float:left;
+    width: calc(100% / 3);
+    box-sizing: border-box;
+    padding:0.5rem;
+
+
+}
+.clear{
+    clear:both;
+}
+
+.btn-find{
+    background-color: #001f86;
+    color: #FFF;
+}
+.imggrid{
+    max-height: 3rem;
+}
+
+.w-50{
+    float:left;
+    width: calc(100% / 2);
+    box-sizing: border-box;
+    padding:0.5rem;
+
+
+}
+.error{
+    margin:0.5rem 0;
+    padding: 1rem;
+    border:1px solid #720000;
+    background-color: #f82929;
+    border-radius: 5px;
+    color:#FFF;
+}
+.btn-danger{
+    background-color: #720000;
+    color: #FFF;
+
+}
+a.btn-link{
+  text-decoration: none;
+}
+
+.w-25{
+    float:left;
+    width: calc(100% / 4);
+    box-sizing: border-box;
+    padding:0.5rem;
+
+
+}
+#modal-conteudo{
+   padding :0.5rem; 
+}
+#modal-conteudo div{
+    padding :1rem 0; 
+    border-bottom: 1px solid #600086;
+}

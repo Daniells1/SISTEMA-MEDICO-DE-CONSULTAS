@@ -35,3 +35,5 @@ Abaixo segue a imagem da modelagem do banco de dados relacional que foi empregad
 ![image](https://user-images.githubusercontent.com/96155029/192200859-bb35150d-0a9e-4a37-8e8f-32c7cd735a12.png)
 
 ## Funcionamento
+![meu](https://user-images.githubusercontent.com/96155029/192206062-6f63054b-6518-459e-9ebd-689fd25ffd26.gif)
+
